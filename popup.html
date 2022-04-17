@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Extension</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css file -->
+    <link rel = "stylesheet" href = "popup.css">
+</head>
+<body>
+
+    <div class = "container">
+        <div class = "generator">
+            <div class = "generator-head">
+                <form id = "generator-form">
+                    <div>
+                        <select name = "gen_options" class = "form-control">
+                            <option value = "paras">paragraphs</option>
+                            <option value = "sentences">sentences</option>
+                            <option value = "words">words</option>
+                        </select>
+                    </div>
+
+                    <div class = "gen-value">
+                        <input name = "gen_count" type = "number" class = "form-control" min = "1" max = "100" value = "5">
+                    </div>
+                </form>
+                <button type = "button" id = "gen-btn" class = "btn">generate!</button>
+
+                <button type = "button" id = "copy-btn" class = "btn">
+                    <span>copy</span>
+                    <i class = "fa-solid fa-copy"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
